@@ -1,0 +1,29 @@
+CREATE DATABASE alma;
+CREATE USER 'musab'@'localhost' IDENTIFIED BY '23s@23992';
+GRANT ALL PRIVILEGES ON alma.* TO 'musab'@'localhost';
+
+USE alma;
+CREATE TABLE cars (
+    cid INT AUTO_INCREMENT,
+    cname VARCHAR(50) NOT NULL,
+    model INT NOT NULL,
+    color VARCHAR(20) NOT NULL,
+ vn VARCHAR (16)NOT NULL,
+    price INT,
+   damg VARCHAR(500),
+   
+    PRIMARY KEY (cid)
+);
+USE alma;
+
+CREATE TABLE  alma . user 
+ ( 
+  name  VARCHAR(25) NOT NULL,
+  un  CHAR(10) primary key ,
+  pass  char(50) NOT NULL,
+  phone  int (8) NOT NULL
+ 
+ 
+  );
+  insert into owner(name,un,pass,phone)values ("musab", "sab7","23S23992",98962406);
+	
